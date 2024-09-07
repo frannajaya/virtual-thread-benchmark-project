@@ -1,0 +1,43 @@
+version: '3.8'
+services:
+  spring-dockerized-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 18080:8080
+    depends_on:
+      mysqldb:
+        condition: service_healthy
+    env_file:
+      - .env
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysqldb:3306/${MYSQL_DATABASE}
+      - SPRING_DATASOURCE_USERNAME=${MYSQL_USER}
+      - SPRING_DATASOURCE_PASSWORD=${MYSQL_PASSWORD}
+      - SPRING_CONFIG_LOCATION=file:/app/application.properties
+    networks:
+      - springboot-mysql-network
+    volumes:
+      - ./src/main/resources/application.properties:/app/application.properties
+  mysqldb:
+    image: mysql:8.0.39
+    ports:
+      - 13306:3306
+    env_file:
+      - .env
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./src/main/resources/db_migration/init_all.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - springboot-mysql-network
+    healthcheck:
+      test: [ "CMD", "mysqladmin", "ping", "-h", "localhost" ]
+      retries: 10
+      interval: 3s
+      timeout: 30s
+volumes:
+  mysql-data:
+networks:
+  springboot-mysql-network:
+    name: springboot-mysql-network
