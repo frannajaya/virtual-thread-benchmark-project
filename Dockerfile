@@ -7,12 +7,6 @@ WORKDIR /app
 # Copy the JAR file into the container
 COPY target/containerize-java-spring-0.0.1-SNAPSHOT.jar app.jar
 
-# Copy the application.properties into the container
-COPY target/classes/application.properties application.properties
-
-# Copy the logback.xml file into the container
-COPY target/classes/logback.xml logback.xml
-
 # Expose the port that the application will run on
 EXPOSE 8080
 
