@@ -1,6 +1,6 @@
-package com.fran.na.jaya.containerize.java.spring.model;
+package com.fran.na.jaya.virtual.thread.benchmark.project.model;
 
-import com.fran.na.jaya.containerize.java.spring.entity.Person;
+import com.fran.na.jaya.virtual.thread.benchmark.project.entity.Person;
 import java.io.Serial;
 import java.io.Serializable;
 

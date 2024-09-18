@@ -1,9 +1,9 @@
-package com.fran.na.jaya.containerize.java.spring.service.impl;
+package com.fran.na.jaya.virtual.thread.benchmark.project.service.impl;
 
-import com.fran.na.jaya.containerize.java.spring.entity.Person;
-import com.fran.na.jaya.containerize.java.spring.model.PersonDto;
-import com.fran.na.jaya.containerize.java.spring.repository.PersonJpaRepository;
-import com.fran.na.jaya.containerize.java.spring.service.PersonService;
+import com.fran.na.jaya.virtual.thread.benchmark.project.entity.Person;
+import com.fran.na.jaya.virtual.thread.benchmark.project.model.PersonDto;
+import com.fran.na.jaya.virtual.thread.benchmark.project.repository.PersonJpaRepository;
+import com.fran.na.jaya.virtual.thread.benchmark.project.service.PersonService;
 import java.util.Objects;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

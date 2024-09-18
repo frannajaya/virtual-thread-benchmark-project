@@ -1,6 +1,6 @@
-package com.fran.na.jaya.containerize.java.spring.repository;
+package com.fran.na.jaya.virtual.thread.benchmark.project.repository;
 
-import com.fran.na.jaya.containerize.java.spring.entity.Person;
+import com.fran.na.jaya.virtual.thread.benchmark.project.entity.Person;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

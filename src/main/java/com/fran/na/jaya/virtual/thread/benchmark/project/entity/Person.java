@@ -1,6 +1,6 @@
-package com.fran.na.jaya.containerize.java.spring.entity;
+package com.fran.na.jaya.virtual.thread.benchmark.project.entity;
 
-import com.fran.na.jaya.containerize.java.spring.model.PersonDto;
+import com.fran.na.jaya.virtual.thread.benchmark.project.model.PersonDto;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

@@ -1,8 +1,8 @@
 -- Create database if it does not exist
-CREATE DATABASE IF NOT EXISTS containerize_java_spring;
+CREATE DATABASE IF NOT EXISTS virtual_thread_benchmark_project;
 
 -- Use the database
-USE containerize_java_spring;
+USE virtual_thread_benchmark_project;
 
 -- Create the table if it does not exist
 CREATE TABLE IF NOT EXISTS person (
@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS person (
 CREATE USER IF NOT EXISTS 'test_user'@'%' IDENTIFIED BY 'test_user_password';
 
 -- Grant all privileges on the database to the new user
-GRANT ALL PRIVILEGES ON containerize_java_spring.* TO 'test_user'@'%';
+GRANT ALL PRIVILEGES ON virtual_thread_benchmark_project.* TO 'test_user'@'%';
 
 -- Apply the changes
 FLUSH PRIVILEGES;

@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.fran.na.jaya</groupId>
-	<artifactId>containerize-java-spring</artifactId>
+	<artifactId>virtual-thread-benchmark-project</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Containerize Java Spring</name>
-	<description>Containerize Java Spring Tutorial</description>
+	<name>Virtual Thread Benchmark Project</name>
+	<description>Benchmarking Virtual Thread java spring vs non using virtual thread</description>
 	<url/>
 	<licenses>
 		<license/>

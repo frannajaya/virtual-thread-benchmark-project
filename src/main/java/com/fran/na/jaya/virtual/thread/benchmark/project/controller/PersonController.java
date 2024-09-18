@@ -1,8 +1,8 @@
-package com.fran.na.jaya.containerize.java.spring.controller;
+package com.fran.na.jaya.virtual.thread.benchmark.project.controller;
 
-import com.fran.na.jaya.containerize.java.spring.entity.Person;
-import com.fran.na.jaya.containerize.java.spring.model.PersonDto;
-import com.fran.na.jaya.containerize.java.spring.service.PersonService;
+import com.fran.na.jaya.virtual.thread.benchmark.project.entity.Person;
+import com.fran.na.jaya.virtual.thread.benchmark.project.model.PersonDto;
+import com.fran.na.jaya.virtual.thread.benchmark.project.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
